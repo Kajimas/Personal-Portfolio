@@ -7,7 +7,7 @@ class Header extends HTMLElement
     connectedCallback() {
         this.innerHTML = `
             <div id="banner">
-                <h1>William Egge's Prototype Personal Portfolio</h1>
+                <h1>William Egge's Personal Portfolio</h1>
             </div>
 
             <div id="nav-container">
