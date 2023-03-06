@@ -5,11 +5,14 @@
    Description: A Javascript page that helped with creating the components for my pages
  */
 
+// Defines a new class named "Header" that extends the built-in "HTMLElement" class
 class Header extends HTMLElement {
   constructor() {
     super();
   }
 
+  // Defines a new method named "connectedCallback" that will be called when the element is added to the document
+  // Contains the content of the banner and the links of the nav bar
   connectedCallback() {
     this.innerHTML = `
             <div id="banner">
@@ -42,4 +45,5 @@ class Header extends HTMLElement {
   }
 }
 
+// Registers the new custom element with the name "header-component" using the "customElements" API
 customElements.define("header-component", Header);
