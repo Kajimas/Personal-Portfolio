@@ -1,11 +1,17 @@
-class Header extends HTMLElement
-{
-    constructor() {
-        super();
-    }
+/* 
+   Title: header.js (https://github.com/Kajimas/Personal-Portfolio/blob/main/header.js)
+   Author: Richard Krasso 
+   Date: 2/2/2023
+   Description: A Javascript page that helped with creating the components for my pages
+ */
 
-    connectedCallback() {
-        this.innerHTML = `
+class Header extends HTMLElement {
+  constructor() {
+    super();
+  }
+
+  connectedCallback() {
+    this.innerHTML = `
             <div id="banner">
                 <h1>William Egge's Personal Portfolio</h1>
             </div>
@@ -33,7 +39,7 @@ class Header extends HTMLElement
                 </ul>
             </div>
         `;
-    }
+  }
 }
 
 customElements.define("header-component", Header);
